@@ -7,6 +7,7 @@ public class Animal implements Comparable<Animal> {
     public String getname(){
         return name;
     }
+    @Override
     public String toString(){
         return name;
     }

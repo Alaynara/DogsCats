@@ -1,14 +1,16 @@
 import java.util.Arrays;
+public class Main{
 
-public class Main {
-    public static void Main (String[] args) {
+    public static void main (String[] args) {
+        Animal a = new Animal("an animal");
+        System.out.println("Aminal: " + a);
+
         Dog[] dogs = new Dog[3];
-        Cat[] cats = new Cat[3];
-
         dogs [0] = new Dog("Jellybean");
         dogs [1] = new Dog ("Charlotte");
         dogs [2] = new Dog ("Ginger");
 
+        Cat[] cats = new Cat[3];
         cats [0] = new Cat ("Izimi");
         cats [1] = new Cat ("Piper");
         cats [2] = new Cat ("Twila");
@@ -26,8 +28,8 @@ public class Main {
         }
         Arrays.sort(pets);
 
-        for (i=0; i<pets.length; i++){
-            System.out.println("Sorted Pets:" + pets);
+        for (int i=0; i<pets.length; i++) {
+            System.out.println("Sorted Pets:" + Arrays.toString(pets));
         }
 
         }

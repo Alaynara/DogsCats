@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class AppColections {
+public class AppCollections {
     public static void main (String[] args){
         List<Cat> cats = new ArrayList<>();
         cats.add(new Cat("Hogarth"));
@@ -21,10 +21,19 @@ public class AppColections {
         for (int i=0;i< dogs.size(); i++){
             pets.add(dogs.get(i));
         }
+
         System.out.println("Our Pets:" + pets);
 
         Collections.sort(pets);
 
         System.out.println("Sorted pets:" + pets);
+
+        List<Animal> uniquePets = new ArrayList<>();
+        for (int i=0; i<pets.size();i++){
+            if (uniquePets.contains(uniquePets.get(i)));
+            uniquePets.add(pets.get(i));
+        }
+        System.out.println("Distinct List: " + uniquePets);
+
     }
 }

@@ -1,0 +1,38 @@
+public class LinkedListAnimal {
+    private static class Node{
+        public Animal data;
+        public Node next;
+
+        public Node(Animal data, Node next){
+            this.data = data;
+            this.next = next;
+        }
+        public Node(Animal data){
+            this(data, null);
+
+//            this.data = data;
+//            this.next = null;  -- less efficient
+        }
+        public Node(){
+            this(null, null);
+        }
+    }
+    //Constructor overloading?
+
+    private int size;
+    private Node head;
+    private Node tail;
+
+    public LinkedListAnimal(){
+        //dummy head
+        head = new Node();
+        tail = head;
+        size = 0;
+    }
+    public LinkedListAnimal.addLast (new Cat("Wiskers"))
+
+    public int size(){
+        return size;
+    }
+
+    }
